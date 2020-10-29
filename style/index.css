@@ -56,6 +56,7 @@ table {
 *{
   box-sizing:border-box;
   max-width:100%;
+  height:auto;
 }
 
 body{
@@ -106,24 +107,43 @@ h4{
   align-items: center;
 }
 
+.hParagraph{
+  display:flex;
+  width:100%;
+  flex-flow: column wrap;
+  align-content:center;
+  font-size:3.2rem;
+}
+
 .paragraph{
   display:flex;
   width:100%;
   flex-flow: column wrap;
   align-content:center;
+  font-size:1rem;
 }
 
 #bossImg{
- image:url('https://unsplash.com/photos/hQFYSfaC3PM');
- height:15vw;
-   margin-top:5%;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position:center top;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+ display:flex;
+ background-image:url('https://i.picsum.photos/id/1018/3914/2935.jpg?hmac=3N43cQcvTE8NItexePvXvYBrAoGbRssNMpuvuWlwMKg');
+ width:100%;
 }
+
+.miniSection{
+  flex-wrap:wrap;
+  width:25%;
+  flex-direction: row;
+}
+
+#mini{
+  display:flex; 
+  image:url('https://i.picsum.photos/id/1019/5472/3648.jpg?hmac=2mFzeV1mPbDvR0WmuOWSiW61mf9DDEVPDL0RVvg1HPs');
+  image:url('https://i.picsum.photos/id/1015/6000/4000.jpg?hmac=aHjb0fRa1t14DTIEBcoC12c5rAXOSwnVlaA5ujxPQ0I');
+  image:url('https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk');
+    image:url('https://i.picsum.photos/id/1021/2048/1206.jpg?hmac=fqT2NWHx783Pily1V_39ug_GFH1A4GlbmOMu8NWB3Ts');
+}
+
+
 
 .body{
   display:flex;
@@ -138,9 +158,17 @@ h4{
 
 
 .bStyle{
-  border-radius:20%;
+  border-radius:10px;
   font-size:3rem; 
+  background-color:grey;
+  justify-content: space-between;
+  margin:8rem 4rem;
   
+}
+.bStyle:hover{
+  border-radius:20%;
+  font-size:5rem; 
+  background-color:yellow;
 }
 
 footer{
@@ -158,4 +186,19 @@ footer{
   align-items: flex-end;
 }
 
+.body footer .bStyle:hover{
+  border-radius:20%;
+  font-size:3rem; 
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
 /*QUICK LINKS*/
+
+
+
+
+
+
+
+
