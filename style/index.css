@@ -69,7 +69,10 @@ table {
 #myProjects{
 
 }
-/**/
+/*QUICK LINKS*/
+ul li{
+	list-style-type: none;
+}
 
 h1{
 
