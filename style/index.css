@@ -168,6 +168,7 @@ h4{
   width:80%;
   justify-content: space-evenly;
   height:auto;
+  min-height:100%;
 }
 
 #mini img{
