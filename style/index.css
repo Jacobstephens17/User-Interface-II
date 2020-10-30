@@ -134,7 +134,7 @@ h4{
   flex-flow: column wrap;
   align-content:center;
   font-size:3.2rem;
-  margin-bottom:3rem;
+  margin-bottom:3.5rem;
   animation-name: parSpacing;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -143,7 +143,7 @@ h4{
 @keyframes introPar {
   0%   {color:black; left:0px; top:0px;}
   50%  {color:#BDB76B; left:200px; top:200px;}
-  100% {color:black; left:0px; top:0px;}
+  100% {color:#191970; left:0px; top:0px;}
 }
 
 .paragraph{
@@ -154,7 +154,7 @@ h4{
   font-size:3rem;
   margin-bottom:3rem;
   animation-name: introPar;
-  animation-duration: 8s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 
