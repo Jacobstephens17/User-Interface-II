@@ -55,10 +55,7 @@ table {
 /*Header And Nav Buttons*/
 * {
   box-sizing:border-box;
-  max-width:100%;
-  height:auto;
   font-family: 'Staatliches', cursive;
- 
 }
 
 body{
@@ -138,7 +135,7 @@ h4{
 #bossImg{
  display:flex;
  background-image:url('https://i.picsum.photos/id/1018/3914/2935.jpg?hmac=3N43cQcvTE8NItexePvXvYBrAoGbRssNMpuvuWlwMKg');
- width:100%;
+ max-width:100%;
  border:3px red solid;
 }
 
