@@ -164,9 +164,9 @@ h4{
 
 #bossImg{
  display:flex;
- background-image:url('https://i.picsum.photos/id/1018/3914/2935.jpg?hmac=3N43cQcvTE8NItexePvXvYBrAoGbRssNMpuvuWlwMKg');
  max-width:100%;
- border:3px red solid;
+
+ border:60px#BDB76B solid;
 }
 
 #bossImg img{
@@ -204,7 +204,7 @@ h4{
 #mini img{
   width:20%;
   justify-content: space-evenly;
-  border:3px red solid;
+  border:10px #BDB76B solid;
   margin:0% 2% 0% 0%;
   
 }
