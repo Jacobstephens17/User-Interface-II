@@ -140,13 +140,22 @@ h4{
   animation-iteration-count: infinite;
 }
 
+@keyframes introPar {
+  0%   {color:black; left:0px; top:0px;}
+  50%  {color:#BDB76B; left:200px; top:200px;}
+  100% {color:black; left:0px; top:0px;}
+}
+
 .paragraph{
   display:flex;
   width:100%;
   flex-flow: column wrap;
   align-content:center;
-  font-size:1rem;
+  font-size:3rem;
   margin-bottom:3rem;
+  animation-name: introPar;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 /*BIG IMAGE*/
