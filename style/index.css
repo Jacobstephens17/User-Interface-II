@@ -66,6 +66,7 @@ body{
    flex-flow:row wrap;
    background-color:#FAF0E6;
    position:absolute; margin:0px; width:100%;
+   font-family: 'Staatliches', cursive;
 }
 
 header{
