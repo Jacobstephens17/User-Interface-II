@@ -56,7 +56,10 @@ table {
 * {
   box-sizing:border-box;
   font-family: 'Staatliches', cursive;
+  @media(max-width:100%;
+  max-height:100%;)
 }
+
 
 body{
    max-width:100%;
@@ -64,7 +67,6 @@ body{
    flex-flow:row wrap;
    background-color:#FAF0E6;
    position:absolute; margin:0px; width:100%;
-   
 }
 
 header{
