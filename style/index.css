@@ -63,6 +63,7 @@ body{
    max-width:100%;
    display:flex;
    flex-flow:row wrap;
+   background-color:#FAF0E6;
 }
 
 header{
@@ -89,6 +90,7 @@ h1{
   flex-flow: column wrap;
   align-content:center;
   font-size:5rem;
+  margin-top:8rem;
 }
 
 h4{
@@ -97,6 +99,7 @@ h4{
   flex-flow: column wrap;
   align-content:center;
   font-size:2rem;
+  margin-top:3rem;
 }
 
 .navBar{
@@ -113,6 +116,7 @@ h4{
   flex-flow: column wrap;
   align-content:center;
   font-size:3.2rem;
+  margin-bottom:3rem;
 }
 
 .paragraph{
@@ -121,29 +125,50 @@ h4{
   flex-flow: column wrap;
   align-content:center;
   font-size:1rem;
+  margin-bottom:3rem;
 }
+
+/*BIG IMAGE*/
 
 #bossImg{
  display:flex;
  background-image:url('https://i.picsum.photos/id/1018/3914/2935.jpg?hmac=3N43cQcvTE8NItexePvXvYBrAoGbRssNMpuvuWlwMKg');
  width:100%;
+ border:3px red solid;
 }
 
-.miniSection{
+/*MINI IMAGE SECTION WITH PARAGRAPH*/
+.miniSection {
+  display:flex;
   flex-wrap:wrap;
-  width:25%;
   flex-direction: row;
+  flex-wrap:wrap;
+  margin-top:3%;
+  
+
+}
+
+#miniP{
+  flex-wrap:wrap;
+  width:15%;
+  flex-direction: row;
+  padding:4% 1% 1% 5%;
+  text-align:center;
+
 }
 
 #mini{
   display:flex; 
-  image:url('https://i.picsum.photos/id/1019/5472/3648.jpg?hmac=2mFzeV1mPbDvR0WmuOWSiW61mf9DDEVPDL0RVvg1HPs');
-  image:url('https://i.picsum.photos/id/1015/6000/4000.jpg?hmac=aHjb0fRa1t14DTIEBcoC12c5rAXOSwnVlaA5ujxPQ0I');
-  image:url('https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk');
-    image:url('https://i.picsum.photos/id/1021/2048/1206.jpg?hmac=fqT2NWHx783Pily1V_39ug_GFH1A4GlbmOMu8NWB3Ts');
+  width:80%;
+  justify-content: space-evenly;
 }
 
-
+#mini img{
+  width:25%;
+  justify-content: space-evenly;
+  border:3px red solid;
+  margin: 0% 1% 0% 1%;
+}
 
 .body{
   display:flex;
@@ -154,22 +179,29 @@ h4{
 }
 
 
-/*BUTTON STYLING*/
+/*BUTTON STYLING HEADER*/
 
 
 .bStyle{
   border-radius:10px;
   font-size:3rem; 
-  background-color:grey;
+  background-color:#191970;
   justify-content: space-between;
   margin:8rem 4rem;
+  color:#BDB76B;
   
 }
 .bStyle:hover{
   border-radius:20%;
   font-size:5rem; 
-  background-color:yellow;
+  background-color:#696969;
+  color:#8B0000;
 }
+
+
+}
+
+/*BUTTON STYLING FOOTER */
 
 footer{
   display:flex;
@@ -177,23 +209,30 @@ footer{
   flex-direction:column;
   flex-wrap:wrap;
   align-items: flex-start;
+  background-color:#BDB76B;
 }
 
 .body footer .bStyle{
-  border-radius:20%;
-  font-size:1rem; 
+  border-radius:5px;
+  font-size:1.1rem; 
   justify-content: space-evenly;
   align-items: flex-end;
+  color:#BDB76B
 }
 
 .body footer .bStyle:hover{
-  border-radius:20%;
+  border-radius:5px;
   font-size:3rem; 
   justify-content: space-evenly;
   align-items: flex-end;
-}
 
 /*QUICK LINKS*/
+
+h4{
+  margin:3% 0% 3% 0%;
+}
+
+
 
 
 
