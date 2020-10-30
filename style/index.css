@@ -142,9 +142,9 @@ h4{
 }
 
 @keyframes introPar {
-  0%   {color:black; left:0px; top:0px;}
-  50%  {color:#BDB76B; left:200px; top:200px;}
-  100% {color:#191970; left:0px; top:0px;}
+  0%   {color:black; font-size:1.5rem; letter-spacing: .5px; left:0px; top:0px;}
+  50%  {color:#BDB76B; font-size:2.8rem; letter-spacing: 3px; left:200px; top:200px;}
+  100% {color:#191970; font-size:1.5rem; letter-spacing: .5px; left:0px; top:0px;}
 }
 
 .paragraph{
@@ -152,6 +152,7 @@ h4{
   width:100%;
   flex-flow: column wrap;
   align-content:center;
+  text-align:center;
   font-size:3rem;
   margin-bottom:3rem;
   animation-name: introPar;
