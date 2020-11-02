@@ -62,6 +62,7 @@ table {
 body{
    display:flex;
    font-size:67.5%;
+
    flex-flow:row wrap;
    background-color:#FAF0E6;
    font-family: 'Staatliches', cursive;
@@ -597,13 +598,7 @@ footer{
   }
 
   .navBar .bStyle{
-    font-size:.5rem;
-    width:100%;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration:none;
-    border-radius:4px;
-    margin:.2rem 0%;
+  
     
 }
   .navBar .bStyle:hover{
@@ -625,13 +620,7 @@ footer{
     font-size:.6rem; 
   }
 
-  .body .navBar .bStyle{
-    font-size:.5rem;
-    width:80%;
-    justify-content: space-evenly;
-    align-items: center;
-    margin:.2rem auto;
-  }
+ 
 .body .navBar a{
   margin-right:4rem;
 }
