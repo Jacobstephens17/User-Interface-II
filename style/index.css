@@ -56,21 +56,32 @@ table {
 * {
   box-sizing:border-box;
   font-family: 'Staatliches', cursive;
-  
+
 }
 
-@media (max-width:800px) {
-  
-}
+
 
 body{
-   max-width:100%;
    display:flex;
+   font-size:67.5%;
    flex-flow:row wrap;
    background-color:#FAF0E6;
-   position:absolute; margin:0px; width:100%;
    font-family: 'Staatliches', cursive;
 }
+
+@media (max-width:500px) { 
+  body {
+  flex-flow: column wrap;
+  align-items:center;
+  }
+  .navBar buttons {
+  flex-flow: column wrap;
+  align-items:center;
+  align-content:center;
+
+  }
+}
+ 
 
 header{
   display:flex;
@@ -127,12 +138,6 @@ h4{
   align-items: center;
 }
 
-@keyframes parSpacing {
-  0%   {letter-spacing: 1px; left:0px; top:0px;}
-  50%  {letter-spacing: 80px; left:200px; top:200px;}
-  100% {letter-spacing: 1px; left:0px; top:0px;}
-}
-
 .hParagraph{
   display:flex;
   width:100%;
@@ -143,12 +148,6 @@ h4{
   animation-name: parSpacing;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-}
-
-@keyframes introPar {
-  0%   {color:black; font-size:1.5rem; letter-spacing: .5px; left:0px; top:0px;}
-  50%  {color:#BDB76B; font-size:2.8rem; letter-spacing: 3px; left:200px; top:200px;}
-  100% {color:#191970; font-size:1.5rem; letter-spacing: .5px; left:0px; top:0px;}
 }
 
 .paragraph{
@@ -223,11 +222,6 @@ h4{
 
 
 /*BUTTON STYLING HEADER*/
-@keyframes buttons{
-  0%  {margin:8rem 4rem; left:0px; top:0px; max-width: 100%;}
-  50%  {margin:8rem 13rem; left:500px; top:500px; max-width: 100%;}
-  100% {margin:8rem 4rem; left:0px; top:0px; max-width: 100%;}
-}
 
 .bStyle{
   border-radius:10px;
@@ -254,7 +248,7 @@ h4{
 
 footer{
   display:flex;
-  max-width:100%;
+  width:100%;
   flex-direction:column;
   flex-wrap:wrap;
   align-items: flex-start;
@@ -262,6 +256,7 @@ footer{
 }
 
 .body footer .bStyle{
+  display:flex;
   border-radius:5px;
   font-size:.6rem; 
   justify-content: center;
