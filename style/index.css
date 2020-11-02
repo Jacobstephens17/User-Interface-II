@@ -59,8 +59,6 @@ table {
 
 }
 
-
-
 body{
    display:flex;
    font-size:67.5%;
@@ -82,7 +80,6 @@ body{
   }
 }
  
-
 header{
   display:flex;
   width:100%;
@@ -145,22 +142,21 @@ h4{
   align-content:center;
   font-size:3.2rem;
   margin-bottom:3.5rem;
-  animation-name: parSpacing;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
 }
 
 .paragraph{
   display:flex;
   width:100%;
-  flex-flow: column wrap;
   align-content:center;
+  justify-content:center;
   text-align:center;
   font-size:3rem;
   margin-bottom:3rem;
-  animation-name: introPar;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+}
+
+header p{
+  justify-content: center;
+  align-content:center;
 }
 
 /*BIG IMAGE*/
@@ -183,8 +179,6 @@ h4{
   flex-direction: row;
   flex-wrap:wrap;
   margin-top:3%;
-  
-
 }
 
 #miniP{
@@ -219,7 +213,6 @@ h4{
   flex-wrap:wrap;
   align-items: flex-start;
 }
-
 
 /*BUTTON STYLING HEADER*/
 
@@ -274,4 +267,131 @@ footer{
 }
 
 
+
+@media (max-width:800px){
+
+  header{
+    text-align:center;
+  }
+  
+  .head{
+    width:100%;
+  }
+
+  @keyframes header {
+    0%   {font-size: 3rem; left:0px; top:0px;  max-width: 100%;}
+    50%  {font-size: 5rem; left:200px; top:200px;  max-width: 100%;}
+    100% {font-size: 3rem; left:0px; top:0px;  max-width: 100%;}
+   
+  }
+  
+  h1{
+    width:100%;
+    font-size:3rem;
+    margin-top:6rem;
+  }
+  
+  h4{
+    font-size:1.5rem;
+    margin-top:3rem;
+    margin-bottom:2.5rem;
+  }
+  
+  .navBar{
+    justify-content: space-evenly;
+  }
+  
+  .hParagraph{
+    width:100%;
+    align-content:center;
+    font-size:2.3rem;
+    justify-content:center;
+
+  }
+  
+  .paragraph{
+    width:100%;
+    font-size:1.8rem;;
+    margin-bottom:3%;
+  }
+  
+  /*BIG IMAGE*/
+  
+  #bossImg{
+   border:35px#BDB76B solid;
+  }
+  
+  /*MINI IMAGE SECTION WITH PARAGRAPH*/
+  .miniSection {
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin-top:3%;
+  }
+  
+  #miniP{
+    flex-wrap:wrap;
+    width:100%;
+    flex-direction: row;
+    padding:2% 1.5% .5% 1%;
+    text-align:center;
+  
+  }
+  
+  #mini{
+    display:flex; 
+    width:100%;
+    flex-direction:row;
+    align-items: space-evenly;
+    justify-content:center;
+    margin-bottom:10%;
+    flex-wrap: wrap;
+  }
+  
+  #mini img{
+    display:flex;
+    width:40%;
+    margin:5% 5%;
+  }
+  
+  /*BUTTON STYLING HEADER*/
+  
+  .bStyle{
+    display:flex;
+    font-size:1.5rem; 
+    background-color:#191970;
+    justify-content: space-evenly;
+    margin:4rem 2rem;
+  }
+  
+  .bStyle:hover{
+    font-size:2.5rem; 
+  }
+  
+  /*BUTTON STYLING FOOTER*/
+  
+  footer{
+    display:flex;
+    max-width:100%;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    background-color:#BDB76B;
+  }
+  
+  .body footer .bStyle{
+    font-size:.6rem; 
+  }
+  
+  .body footer .bStyle:hover{
+    border-radius:5px;
+    font-size:1.5rem; 
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+  }
+
+}
 
