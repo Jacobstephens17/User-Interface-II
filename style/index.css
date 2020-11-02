@@ -56,9 +56,12 @@ table {
 * {
   box-sizing:border-box;
   font-family: 'Staatliches', cursive;
-  @media(max-height:100%;)
+  
 }
 
+@media (max-width:800px) {
+  
+}
 
 body{
    max-width:100%;
@@ -87,9 +90,10 @@ header{
   
 }
 @keyframes header {
-  0%   {font-size: 5rem; left:0px; top:0px;}
-  50%  {font-size: 7rem; left:200px; top:200px;}
-  100% {font-size: 5rem; left:0px; top:0px;}
+  0%   {font-size: 5rem; left:0px; top:0px;  max-width: 100%;}
+  50%  {font-size: 7rem; left:200px; top:200px;  max-width: 100%;}
+  100% {font-size: 5rem; left:0px; top:0px;  max-width: 100%;}
+ 
 }
 
 h1{
@@ -220,9 +224,9 @@ h4{
 
 /*BUTTON STYLING HEADER*/
 @keyframes buttons{
-  0%  {margin:8rem 4rem; left:0px; top:0px;}
-  50%  {margin:8rem 13rem; left:200px; top:200px;}
-  100% {margin:8rem 4rem; left:0px; top:0px;}
+  0%  {margin:8rem 4rem; left:0px; top:0px; max-width: 100%;}
+  50%  {margin:8rem 13rem; left:500px; top:500px; max-width: 100%;}
+  100% {margin:8rem 4rem; left:0px; top:0px; max-width: 100%;}
 }
 
 .bStyle{
@@ -235,6 +239,7 @@ h4{
   animation-name: buttons; 
   animation-duration: 20s;
   animation-iteration-count: infinite;
+  max-width: 100%;
 }
 
 .bStyle:hover{
@@ -242,13 +247,14 @@ h4{
   font-size:5rem; 
   background-color:#696969;
   color:#8B0000;
+  max-width: 100%;
 }
 
 /*BUTTON STYLING FOOTER*/
 
 footer{
   display:flex;
-  width:100%;
+  max-width:100%;
   flex-direction:column;
   flex-wrap:wrap;
   align-items: flex-start;
@@ -257,10 +263,11 @@ footer{
 
 .body footer .bStyle{
   border-radius:5px;
-  font-size:1.1rem; 
-  justify-content: space-evenly;
+  font-size:.6rem; 
+  justify-content: center;
   align-items: flex-end;
-  color:#BDB76B
+  color:#BDB76B;
+  max-width: 100%;
 }
 
 .body footer .bStyle:hover{
@@ -268,6 +275,7 @@ footer{
   font-size:3rem; 
   justify-content: space-evenly;
   align-items: flex-end;
+  max-width: 100%;
 }
 
 
